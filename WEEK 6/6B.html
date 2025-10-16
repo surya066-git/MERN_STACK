@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Output in HTML</title>
+</head>
+<body>
+
+<h2>Different Ways to Display Output</h2>
+
+<!-- 1. Using innerText -->
+<p id="output1"></p>
+<button onclick="document.getElementById('output1').innerText = 'This is output using innerText.'">
+    Show innerText Output
+</button>
+
+<br><br>
+
+<!-- 2. Using innerHTML -->
+<p id="output2"></p>
+<button onclick="document.getElementById('output2').innerHTML = '<b>This is bold text using innerHTML.</b>'">
+    Show innerHTML Output
+</button>
+
+<br><br>
+
+<!-- 3. Using document.write() (not recommended after page load) -->
+<button onclick="document.write('This is output using document.write(). It replaces the whole page!')">
+    Show document.write Output
+</button>
+
+</body>
+</html>

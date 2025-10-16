@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h2>regex methods</h2>
+    <script>
+      let text = "i love JavaScript and Java";
+      let pattern = /Java/;
+
+      document.write("test(): " + pattern.test(text) + "<br>");
+      document.write("exec(): " + pattern.exec(text) + "<br>");
+      document.write("match(): " + text.match(/Java/g) + "<br>");
+      document.write("search(): " + text.search(/Java/) + "<br>");
+      document.write("replace(): " + text.replace(/Java/g, "python") + "<br>");
+    </script>
+  </body>
+</html>

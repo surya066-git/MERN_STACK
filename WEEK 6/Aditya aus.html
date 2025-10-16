@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Validation</title>
+  <script>
+    function validate() {
+      var user = document.getElementById("user").value;
+      var pass = document.getElementById("pwd").value;
+      if (user === "Aditya" && pass === "Aditya") {
+        document.write("Welcome to Aditya University");
+      } else {
+        document.write("Incorrect username and password");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  Username: <input type="text" id="user"><br>
+  Password: <input type="password" id="pwd"><br>
+  <input type="button" value="Signin" onclick="validate();">
+
+</body>
+</html>
